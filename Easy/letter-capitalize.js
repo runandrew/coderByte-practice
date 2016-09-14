@@ -15,4 +15,14 @@ function LetterCapitalize(str) {
   return words.join(" ");
 }
 
+// Alternate solution using string replace
+function LetterCapitalizeAlt(str) {
+
+  // find any letter with a space before it and pass it to a funciton that capitalizes that letter
+  return str.replace(/\b[a-z]/gi, function(char) {
+    return char.toUpperCase();
+  });
+}
+
 console.log(LetterCapitalize("this is a test"));
+console.log(LetterCapitalizeAlt("this is a test"));
