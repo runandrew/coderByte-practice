@@ -1,0 +1,1 @@
+This is a repository for my solutions for Coderbyte problems. You can find the problems at https://coderbyte.com.
